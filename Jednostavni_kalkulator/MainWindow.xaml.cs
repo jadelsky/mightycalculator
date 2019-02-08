@@ -41,7 +41,7 @@ namespace Jednostavni_kalkulator
             lblMain.Content = (string)lblMain.Content + "" + (string)tipka.Content;
             Parse((string)lblMain.Content);
         }
-
+        //
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
            // Button tipka = (Button)sender;
