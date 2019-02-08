@@ -1,0 +1,44 @@
+﻿<Window x:Class="Jednostavni_kalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Jednostavni_kalkulator"
+        mc:Ignorable="d"
+        Title="Mighty Calculator (All rights not reserved)" Height="490.337" Width="352.52" ResizeMode="CanMinimize">
+    <Grid x:Name="button1" Margin="0,0,4,0" RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.054"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="403*"/>
+        </Grid.RowDefinitions>
+        <Button Content="1" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click" FontSize="36" Grid.Row="2"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="90,23,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click" FontSize="36" Grid.Row="2"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="170,23,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click" FontSize="36" Grid.Row="2"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click" FontSize="36" Grid.Row="2"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="90,92,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click" FontSize="36" Grid.Row="2"/>
+        <Button Content="6" Margin="170,92,0,0" VerticalAlignment="Top" Height="64" HorizontalAlignment="Left" Width="75" Click="Button_Click" FontSize="36" Grid.Row="2"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click" FontSize="36" Grid.Row="2"/>
+        <Button Content="C" HorizontalAlignment="Left" Margin="170,230,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click_Clear" FontSize="36" Grid.Row="2"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="90,161,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click" FontSize="36" Grid.Row="2"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="170,161,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click" FontSize="36" Grid.Row="2"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="90,230,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click" FontSize="36" Grid.Row="2"/>
+        <Button Content="," HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click" FontSize="36" Grid.Row="2"/>
+        <Label x:Name="lblMain" Content="" HorizontalAlignment="Left" Margin="10,9.79,0,0" VerticalAlignment="Top" Width="315" Height="67" Grid.RowSpan="2" Grid.Row="1"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="250,23,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click_Zbrajanje" FontSize="36" Grid.Row="2"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="250,92,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click_Oduzimanje" FontSize="36" Grid.Row="2"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="250,230,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click_Dijeljenje" FontSize="36" Grid.Row="2"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="250,161,0,0" VerticalAlignment="Top" Width="75" Height="64" Click="Button_Click_Mnozenje" FontSize="36" Grid.Row="2"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="10,299,0,0" VerticalAlignment="Top" Width="315" Height="64" Click="Button_Click1" FontSize="36" RenderTransformOrigin="0.151,1.282" Grid.Row="2"/>
+        <Label Content="      MIGHTY CALCULATOR" HorizontalAlignment="Center" Margin="10,368,12,0" VerticalAlignment="Top" Width="315" Height="33" FontFamily="Wide Latin" FontStretch="UltraExpanded" Grid.Row="2" />
+
+    </Grid>
+</Window>
