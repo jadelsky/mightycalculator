@@ -31,34 +31,33 @@ namespace Jednostavni_kalkulator
         {
             char[] delimiters = new char[] { '+', '-', '*', '/' };
             string[] parts = data.Split(delimiters);
-
-
+            string[] parts2 = data.Split(' ');            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button tipka = (Button)sender;
             lblMain.Content = (string)lblMain.Content + "" + (string)tipka.Content;
-            Parse((string)lblMain.Content);
         }
         //
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
            // Button tipka = (Button)sender;
-            lblMain.Content =  " = ";
+            Parse((string)lblMain.Content);
+            //lblMain.Content =  " = ";
 
         }
 
         private void Button_Click_Zbrajanje(object sender, RoutedEventArgs e)
         {
             // Button tipka = (Button)sender;
-            lblMain.Content = " + ";
+            lblMain.Content += " + ";
 
         }
         private void Button_Click_Oduzimanje(object sender, RoutedEventArgs e)
         {
             // Button tipka = (Button)sender;
-            lblMain.Content = " - ";
+            lblMain.Content += " - ";
 
         }
 
