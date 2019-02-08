@@ -24,7 +24,7 @@ namespace Jednostavni_kalkulator
         public MainWindow()
         {
             InitializeComponent();
-            
+            //DELAS THE SAILOR MAN
         }
 
         private void Parse(string data)
